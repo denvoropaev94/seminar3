@@ -4,7 +4,6 @@ string newstr = "";
 
 string InversionString (string str)
 {
-
     for (int i = str.Length - 1; i >= 0; i--)
     {
         newstr += str[i];
@@ -12,14 +11,15 @@ string InversionString (string str)
     return newstr;
 }
 bool IsPolindrom(string str){
-    if(str==newstr)
-    {
-        return true;
+    
+    string res = InversionString(str);
+        if (res==str){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
-    else {
-        return false;
-    }
-}
 bool result = IsPolindrom(str);
 Console.WriteLine(result);
 

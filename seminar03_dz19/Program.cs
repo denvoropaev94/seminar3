@@ -19,7 +19,7 @@ bool IsPolindrom(string str){
         else{
             return false;
         }
-    }
+    }   
 bool result = IsPolindrom(str);
 Console.WriteLine(result);
 

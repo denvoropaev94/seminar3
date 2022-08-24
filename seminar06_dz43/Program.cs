@@ -16,6 +16,9 @@ string FuncEquation(int b1,int k1,int b2,int k2){
 
     string str = string.Empty;
     double z = (k1-k2);
+    if(z==0){
+        System.Console.WriteLine("Ошибка! На ноль делить нельзя!");
+    }
     double x = (b2-b1)/z;
     
     double y = k1 * x  + b1;

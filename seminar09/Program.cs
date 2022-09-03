@@ -1,4 +1,5 @@
-﻿// System.Console.WriteLine("Введие число");
+﻿// Все натуральные числа от одного до N. Рекурсия
+// System.Console.WriteLine("Введие число");
 // int number = Convert.ToInt32(Console.ReadLine());
 // Console.Clear();
 
@@ -11,22 +12,7 @@
 // PrintNumbers(number);
 
 
-//2
-// System.Console.WriteLine("Введие первое число");
-// int m = Convert.ToInt32(Console.ReadLine());
-// System.Console.WriteLine("Введие второе число");
-// int n = Convert.ToInt32(Console.ReadLine());
-// Console.Clear();
 
-// void PrintNumbers(int index,int num){
-//     System.Console.Write($" {index}");
-//     if(index<num){
-
-//         PrintNumbers(index + 1,num);
-//     }
-
-// }
-// PrintNumbers(m,n);
 
 // Найти сумму цифр в числе с помощью рекурсии.
 // System.Console.WriteLine("Введие число");
@@ -47,7 +33,7 @@
 // int result = SumNumbers(number);
 // System.Console.WriteLine(result);
 
-//4
+//4 Программа принимает 2 числа A и B, возводит число A в степень B.
 
 // int Pow(int a, int b)
 // {
@@ -63,50 +49,8 @@
 // System.Console.WriteLine(result);
 
 
-//ДЗ.Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
-
-// System.Console.WriteLine("Введие 1-ое число");
-// int m = Convert.ToInt32(Console.ReadLine());
-// System.Console.WriteLine("Введие 2-ое число");
-// int n = Convert.ToInt32(Console.ReadLine());
-// Console.Clear();
-
-// int FunkAkkerman(int m,int n)
-// {
-//       if (m == 0) {
-//             return n + 1;
-//         } 
-//         else if (n == 0 && m > 0) {
-//             return FunkAkkerman(m - 1, 1);
-//         } 
-//         else {
-//             return FunkAkkerman(m - 1, FunkAkkerman(m, n - 1));
-//         }
-// }
-
-// int result = FunkAkkerman(m,n);
-// System.Console.WriteLine(result);
 
 
-//Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
-// M = 1; N = 15 -> 120
-// M = 4; N = 8. -> 30
-System.Console.WriteLine("Введие первое число");
-int m = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Введие второе число");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Clear();
 
-int PrintNumbers(int m,int n){
-    // System.Console.Write($" {index}");
-    if(m==n) return m;
-    if(m<n){
 
-        return m + PrintNumbers(m+1, n);
-    }
-    throw new Exception();
-
-}
-int result = PrintNumbers(m, n);
-System.Console.WriteLine(result);
 
